@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  /*background-color: #ccc;*/
+  opacity: 0.8;
+  padding-right: 30px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+header .company_name {
+  margin-left: 20px;
+}
+
+.header_list {
+  height: 80px;
+  color: black;
+  display: flex;
+  line-height: 80px;
+  font-size: 18px;
+}
+
+.header_list li {
+  margin-left: 10px;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+
+.header_list li:hover {
+  background-color: #00CCFF;
+  /*color: gray;*/
+  transition: 0.5s;
+}
+
+#background_image {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  transition-duration: 2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url("../images/main_image3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top_wrapper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.corporate_philosophy {
+  color: rgb(6,128,182);
+  color: #00FFFF;
+  color: #33CCFF;
+  color: #00CCFF;
+  text-shadow: 3px 3px 3px white;
+  font-size: 42px;
+  font-weight: bold;
+  border-bottom: 3px solid #00FFFF;
+  border-bottom: 3px solid #33CCFF;
+  border-bottom: 3px solid #00CCFF;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 350px;
+  left: 80px;
+}
+
+.third_wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.second_wrapper {
+  /*height: 70vh;*/
+  width: 100%;
+  background-color: white;
+}
+
+.second_wrapper_container {
+  width: 86%;
+  margin: 30px auto 0;
+  padding-bottom: 100px;
+  display: flex;
+  /*position: relative;*/
+}
+
+.second_wrapper_container p {
+ /* position: absolute;
+  top: 160px;
+  right: 120px;*/
+  margin: 140px 0 0 80px;
+  font-size: 26px;
+  letter-spacing: 3px;
+  line-height: 46px;
+}
+
+.underline {
+  border-bottom: 3px solid #00CCFF;
+}
+
+.second_wrapper_container_picture {
+  width: 440px;
+  box-shadow: 28px 28px 0px 0 #66CCFF;
+  margin-top: 80px;
+}
+
+.wrapper_theme {
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper_theme h3 {
+  font-size: 38px;
+  padding-top: 44px;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #00CCFF;
+  display: inline-block;
+}
+.second_wrapper .wrapper_theme h3 {
+  border: none;
+  padding-top: 84px;
+}
+
+.wrapper_theme p {
+  color: gray;
+  margin-top: 12px;
+}
+
+.third_wrapper_pictures {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.third_wrapper_pictures_image {
+  width: 400px;
+}
+
+.fourth_wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
