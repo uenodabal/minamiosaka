@@ -186,15 +186,11 @@ header .company_name {
   width: 100%;
   background-color: white;
   padding-bottom: 120px;
-  /*background-color: rgba(255, 255, 255, 0.85);*/
 }
 
 .company_information {
   width: 60%;
   margin: 30px auto 0;
-  /*background-color: rgba(255, 255, 255, 1);*/
-  /*background-color: white;*/
-  /*height: 500px;*/
 }
 
 .company_information table {
@@ -207,7 +203,7 @@ header .company_name {
   line-height: 30px;
 }
 
-.company_information table tr td {
+.company_information table tr td, .company_information table tr th {
   border: 1px solid #ccc;
 }
 
@@ -216,16 +212,15 @@ header .company_name {
   margin-bottom: 20px;
 }
 
-.company_information table tr td:nth-child(even) {
+.company_information table tr td {
   padding: 10px 30px 10px 30px;
 }
 
-.company_information table tr td:nth-child(odd) {
+.company_information table tr th {
   text-align: center;
   /*padding-left: 30px;*/
   width: 180px;
 }
 
 .company_information table tr td:first-child{
-  /*color: #ccc;*/
 }

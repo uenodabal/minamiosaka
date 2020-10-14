@@ -143,6 +143,52 @@
     margin-bottom: 20px;
   }
 
+  .company_information {
+    width: 100%;
+    margin: 30px auto 0;
+  }
+
+  .company_information table {
+    width: 90%;
+  }
+
+  .company_information table tr {
+    display: block;
+    height: inherit;
+    border-top: 1px solid #ccc;
+  }
+
+  .company_information table tr th {
+    text-align: left;
+    padding-top: 8px;
+  }
+
+  .company_information table iframe {
+    width: 100%;
+  }
+
+  .company_information table tr td {
+    /*text-align: center;*/
+    padding: 4px 0 10px 10px;
+  }
+
+
+  .company_information table tr td, .company_information table tr th {
+    border: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+
+/*
+  .company_information ul {
+    width: 90%;
+  }*/
+/*
+  .company_information ul li {
+    border-top: 1px solid #ccc;
+  }*/
+
 
 
 
