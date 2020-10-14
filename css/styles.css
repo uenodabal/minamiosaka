@@ -179,3 +179,53 @@ header .company_name {
   width: 100%;
   background-color: white;
 }
+
+.fifth_wrapper {
+  /*height: 100vh;*/
+  opacity: 0.85;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 120px;
+  /*background-color: rgba(255, 255, 255, 0.85);*/
+}
+
+.company_information {
+  width: 60%;
+  margin: 30px auto 0;
+  /*background-color: rgba(255, 255, 255, 1);*/
+  /*background-color: white;*/
+  /*height: 500px;*/
+}
+
+.company_information table {
+  margin: 0 auto;
+}
+
+.company_information table tr {
+  /*text-align: center;*/
+  height: 40px;
+  line-height: 30px;
+}
+
+.company_information table tr td {
+  border: 1px solid #ccc;
+}
+
+.company_information table tr td iframe {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.company_information table tr td:nth-child(even) {
+  padding: 10px 30px 10px 30px;
+}
+
+.company_information table tr td:nth-child(odd) {
+  text-align: center;
+  /*padding-left: 30px;*/
+  width: 180px;
+}
+
+.company_information table tr td:first-child{
+  /*color: #ccc;*/
+}
