@@ -92,7 +92,7 @@
     position: absolute;
     background-color: white;
     opacity: 0.8;
-    top: 260px;
+    top: 220px;
     left: 20px;
     border: none;
     line-height: 70px;
@@ -132,6 +132,14 @@
   .second_wrapper_container p {
     margin: 70px 0 0 0;
     font-size: 22px;
+  }
+
+  .third_wrapper_pictures {
+    display: block;
+  }
+
+  .third_wrapper_pictures_image {
+    width: 100%;
   }
 
 
