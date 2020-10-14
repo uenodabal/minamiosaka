@@ -1,0 +1,136 @@
+@media screen and (max-width: 959px) {
+  /* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    /*background-color: #ccc;*/
+    opacity: 0.8;
+    padding-right: 10px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+
+  header .company_name {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  .open_hamburger, #user_menu {
+    display: block;
+  }
+
+  .header_list {
+    display: none;
+  }
+
+  .header_list li {
+    display: none;
+  }
+
+  .open_hamburger {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  #user_menu {
+    background: rgb(128, 128, 128);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 99;
+    width: 70%;
+    text-align: center;
+    visibility: hidden;
+    align-items: center;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+  }
+
+  #user_menu .close_hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  .open #user_menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .user_menu_ul {
+    margin-top: 70px;
+    width: 100%;
+  }
+
+  .user-menu__element {
+    width: 100%;
+    color: white;
+    border-top: 1px white solid;
+    padding: 10px;
+  }
+
+  .corporate_philosophy {
+    font-size: 30px;
+    position: absolute;
+    background-color: white;
+    opacity: 0.8;
+    top: 260px;
+    left: 20px;
+    border: none;
+    line-height: 70px;
+    /*text-decoration: underline;*/
+    /*text-shadow: 3px 3px 3px #3399FF;*/
+    /*text-shadow: 3px 3px 3px black;*/
+    text-shadow: none;
+    padding-left: 14px;
+  }
+
+  .wrapper_theme h3 {
+    font-size: 28px;
+    padding-top: 24px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #00CCFF;
+    display: inline-block;
+  }
+  .second_wrapper .wrapper_theme h3 {
+    border: none;
+    width: 80%;
+    line-height: 40px;
+    margin: 38px auto 0;
+    padding-top: 20px;
+  }
+
+  .second_wrapper_container {
+    display: block;
+  }
+
+  .second_wrapper_container_picture {
+    width: 90%;
+    box-shadow: 28px 28px 0px 0 #66CCFF;
+    margin-top: 40px;
+    /*height: 200px;*/
+  }
+
+  .second_wrapper_container p {
+    margin: 70px 0 0 0;
+    font-size: 22px;
+  }
+
+
+
+
+}

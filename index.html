@@ -7,11 +7,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
     <header>
       <h1 class="company_name">南大阪建設株式会社</h1>
+      <i class="fas fa-bars open_hamburger"></i>
+      <div id="user_menu">
+        <nav>
+          <ul class="user_menu_ul">
+            <li>施工実績</li>
+            <li>資格について</li>
+            <li>求人情報</li>
+          </ul>
+        </nav>
+        <i class="fas fa-times close_hamburger"></i>
+      </div>
       <ul class="header_list">
         <li>施工実績</li>
         <li>資格について</li>
@@ -19,7 +33,14 @@
         <!-- <li>お問い合わせ</li> -->
       </ul>
     </header>
-    <div id="background_image"></div>
+    <div id="background_image">
+      <ul class="slick_ul">
+        <li><img src="images/main_image3.jpg" class="slick_li_image"></li>
+        <li><img src="images/business1white.jpg" class="slick_li_image"></li>
+        <li><img src="images/business2white.jpg" class="slick_li_image"></li>
+        <li><img src="images/business3white.jpg" class="slick_li_image"></li>
+      </ul>
+    </div>
     <div class="top_wrapper">
       <h2 class="corporate_philosophy">100年企業を目指し、技術向上を意識して信頼を形に。</h2>
     </div>
@@ -48,20 +69,37 @@
         <h3>資格について</h3>
       </div>
     </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
     <script>
-      var pics_src = new Array("images/main_image3.jpg", "images/business1white.jpg","images/business2white.jpg","images/business3white.jpg");
-            var num = 0;
-            slideshow_timer();
-            function slideshow_timer(){
-                if (num == 3){
-                    num = 0;
-                }
-                else {
-                    num ++;
-                }
-                document.getElementById("background_image").style.backgroundImage = `url(${pics_src[num]})`;
-                setTimeout("slideshow_timer()",2300);
-            }
+      $(".slick_ul").slick({
+        autoplay: true,
+        speed: 900,
+        fade: true
+      });
+
+      $(".open_hamburger").on('click', function() {
+        console.log(1);
+        $('body').addClass('open');
+      })
+
+      $(".close_hamburger").on('click', function() {
+        $('body').removeClass('open');
+      })
+
+      // var pics_src = new Array("images/main_image3.jpg", "images/business1white.jpg","images/business2white.jpg","images/business3white.jpg");
+      //       var num = 0;
+      //       slideshow_timer();
+      //       function slideshow_timer(){
+      //           if (num == 3){
+      //               num = 0;
+      //           }
+      //           else {
+      //               num ++;
+      //           }
+      //           document.getElementById("background_image").style.backgroundImage = `url(${pics_src[num]})`;
+      //           setTimeout("slideshow_timer()",2300);
+      //       }
     </script>
   </body>
 </html>
