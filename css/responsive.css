@@ -21,6 +21,10 @@
     margin-top: 24px;
   }
 
+  .slick-prev, .slick-arrow, .slick-next, .slick-arrow {
+    display: none !important;
+  }
+
   .open_hamburger, #user_menu {
     display: block;
   }
