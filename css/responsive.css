@@ -21,7 +21,7 @@
     margin-top: 24px;
   }
 
-  .slick-prev, .slick-arrow, .slick-next, .slick-arrow {
+  .slick_ul>.slick-prev, .slick_ul>.slick-arrow, .slick_ul>.slick-next, .slick_ul>.slick-arrow {
     display: none !important;
   }
 
@@ -116,6 +116,18 @@
     line-height: 40px;
     margin: 38px auto 0;
     padding-top: 20px;
+  }
+
+  .second_wrapper .wrapper_theme h3:before, .second_wrapper .wrapper_theme h3:after {
+    border-top: none;
+    content: none;
+    width: 0; /* 線の長さ */
+  }
+  .second_wrapper .wrapper_theme h3:before {
+    margin-right: 0; /* 文字の右隣 */
+  }
+  .second_wrapper .wrapper_theme h3:after {
+    margin-left: 0; /* 文字の左隣 */
   }
 
   .second_wrapper_container {

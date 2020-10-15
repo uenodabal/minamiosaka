@@ -56,19 +56,89 @@
     </div>
     <div class="third_wrapper">
       <div class="wrapper_theme">
-        <h3>施工実績</h3>
-        <p>Construction results.</p>
+        <h3>施工について</h3>
+        <p>About construction.</p>
       </div>
-      <div class="third_wrapper_pictures">
-        <img src="images/business1.png" alt="施工実績" class="third_wrapper_pictures_image">
-        <img src="images/business2.png" alt="施工実績" class="third_wrapper_pictures_image">
-        <img src="images/business3.png" alt="施工実績" class="third_wrapper_pictures_image">
+      <div class="third_wrapper_container">
+        <p>安心・信頼を意識しながら、<br><span class="underline">ひとつひとつ丁寧に</span>施工業務を行なっています。<br>鍛えられた技術職人たちが、<br>細かい部分も<span class="underline">納得のいくまで徹底的に</span>向き合います。</p>
+        <ul class="slick_business_pictures">
+          <li>
+            <img src="images/business1.png" alt="施工実績" class="third_wrapper_pictures_image">
+            <div class="mask">
+              <div class="caption">主要地方道伏見柳谷高槻線</div>
+            </div>
+          </li>
+          <li>
+            <img src="images/business2.png" alt="施工実績" class="third_wrapper_pictures_image">
+            <div class="mask">
+              <div class="caption">中国横断自動車道 山崎JCT</div>
+            </div>
+          </li>
+          <li>
+            <img src="images/business3.png" alt="施工実績" class="third_wrapper_pictures_image">
+            <div class="mask">
+              <div class="caption">石津川工事</div>
+            </div>
+          </li>
+          <li>
+            <img src="images/goryokoukabashi.jpg" alt="施工実績" class="third_wrapper_pictures_image">
+            <div class="mask">
+              <div class="caption">高槻東道路 五領高架橋</div>
+            </div>
+          </li>
+          <li>
+            <img src="images/hunasakagawa.jpg" alt="施工実績" class="third_wrapper_pictures_image">
+            <div class="mask">
+              <div class="caption">船坂川</div>
+            </div>
+          </li>
+          <li>
+            <img src="images/joyodaini1.jpg" alt="施工実績" class="third_wrapper_pictures_image">
+            <div class="mask">
+              <div class="caption">城陽第二高架橋</div>
+            </div>
+          </li>
+          <li>
+            <img src="images/joyodaisan1.jpg" alt="施工実績" class="third_wrapper_pictures_image">
+            <div class="mask">
+              <div class="caption">城陽第三高架橋</div>
+            </div>
+          </li>
+          <li>
+            <img src="images/yamazakiJCT1.jpg" alt="施工実績" class="third_wrapper_pictures_image">
+            <div class="mask">
+              <div class="caption">中国横断自動車道 山崎JCT</div>
+            </div>
+          </li>
+          <li>
+            <img src="images/main_image2.jpg" alt="施工実績" class="third_wrapper_pictures_image">
+            <div class="mask">
+              <div class="caption">阿倍野歩道橋</div>
+            </div>
+          </li>
+          <li>
+            <img src="images/yamazakiJCT2.jpg" alt="施工実績" class="third_wrapper_pictures_image">
+            <div class="mask">
+              <div class="caption">中国横断自動車道 山崎JCT</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="link_to_results">
+        <a href="results.html">→具体的な施工実績はこちら</a>
       </div>
     </div>
     <div class="fourth_wrapper">
       <div class="wrapper_theme">
         <h3>資格について</h3>
         <p>About licences.</p>
+      </div>
+      <div class="fourth_wrapper_container">
+        <img src="images/employee2.jpg" class="employee_image">
+        <p>我が社は、従業員の<span class="underline">資格取得や技術講習受講</span>を応援しています<br>また、常に技術向上を心がけ、<br><span class="underline">いかなる工事にも対応できる人材</span>を育てます。</p>
+        <div class="link_to_licences">
+          <a href="licences.html">→実際に社員が取得している資格はこちら</a>
+        </div>
       </div>
     </div>
     <div class="fifth_wrapper">
@@ -119,7 +189,16 @@
       $(".slick_ul").slick({
         autoplay: true,
         speed: 900,
-        fade: true
+        fade: true,
+        arrows: false
+      });
+
+      $('.slick_business_pictures').slick({
+        prevArrow:'<i class="fa fa-angle-left arrow arrow-left"></i>',
+        nextArrow:'<i class="fa fa-angle-right arrow arrow-right"></i>',
+        autoplay: true,
+        autoplaySpeed: 1500,
+        speed: 1200
       });
 
       $(".open_hamburger").on('click', function() {
