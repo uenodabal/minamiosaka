@@ -146,6 +146,36 @@
     font-size: 22px;
   }
 
+  .third_wrapper {
+    padding-bottom: 40px;
+  }
+
+  .third_wrapper_container {
+    display: block;
+  }
+
+  .css-br::after {
+    content: none;
+    white-space: normal;
+  }
+
+  .third_wrapper_container p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 48px;
+    margin-top: 30px;
+  }
+
+  .link_to_results {
+    margin-top: 16px;
+  }
+
+  .slick_business_pictures {
+    width: 100%;
+    /*height: 320px;*/
+  }
+
+
   .third_wrapper_pictures {
     display: block;
   }
@@ -153,6 +183,24 @@
   .third_wrapper_pictures_image {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .fourth_wrapper_container p {
+    background-color: white;
+    opacity: 0.9;
+    padding: 30px 36px;
+    display: inline-block;
+    position: inherit;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 48px;
+  }
+
+  .employee_image {
+    width: 100%;
+    margin-top: 30px;
   }
 
   .company_information {
