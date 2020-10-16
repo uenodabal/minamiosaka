@@ -481,8 +481,9 @@ header .company_name {
   text-align: center;
   color: white;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 
