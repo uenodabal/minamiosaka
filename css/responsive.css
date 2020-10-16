@@ -255,6 +255,17 @@
     font-size: 24px;
   }
 
+  .sub_page_slick_business_pictures li .caption {
+    font-size: 150%;
+    line-height: 300px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .sub_page_slick_business_pictures .arrow {
+    display: none !important;
+  }
+
   .results_lists {
     width: 100%;
     margin: 60px auto 100px;
