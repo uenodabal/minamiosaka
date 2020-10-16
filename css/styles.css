@@ -217,6 +217,18 @@ header .company_name {
   line-height: 320px;
   color: #fff;
 }
+
+.sub_page_slick_business_pictures li .caption {
+  font-size: 150%;
+  line-height: 500px;
+  text-align: center;
+  color: #fff;
+}
+
+.sub_page_slick_business_pictures .arrow {
+  display: none !important;
+}
+
 .slick_business_pictures li .mask {
   width: 100%;
   height: 100%;
@@ -315,7 +327,7 @@ header .company_name {
 
 .link_to_licences {
   display: inline-block;
-  margin-left: 26px;
+  margin-left: 30px;
 }
 
 .link_to_licences a, .link_to_results a {
@@ -325,6 +337,8 @@ header .company_name {
 .employee_image {
   width: 800px;
   margin-top: 60px;
+  border: 1px solid #ccc;
+  box-shadow: 28px 28px 0px 0 #66CCFF;
 }
 
 .fifth_wrapper {
@@ -371,3 +385,104 @@ header .company_name {
 
 .company_information table tr td:first-child{
 }
+
+.sub_page_container {
+  padding-top: 50px;
+}
+
+.sub_page_theme {
+  width: 100%;
+  text-align: center;
+}
+
+.sub_page_theme h3 {
+  font-size: 30px;
+  padding-top: 40px;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #00CCFF;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sub_page_main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sub_page_slick_business_pictures {
+  margin: 0 auto;
+  width: 70%;
+  height: 500px;
+}
+
+
+
+.results_slick_part {
+  /*display: flex;*/
+  text-align: center;
+}
+
+.image_caption p {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.results_lists {
+  width: 80%;
+  margin: 60px auto;
+}
+
+.results_lists .result_lists_phone {
+  display: none;
+}
+
+.results_lists table {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.results_lists table tr {
+  /*text-align: center;*/
+  height: 40px;
+  line-height: 30px;
+}
+
+.results_lists table tr td, .results_lists table tr th {
+  border: 1px solid #ccc;
+}
+
+.results_lists table tr td iframe {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.results_lists table tr td {
+  padding: 10px 30px 10px 30px;
+}
+
+.results_lists table tr th {
+  text-align: center;
+  font-size: 22px;
+  padding: 8px;
+  width: 180px;
+}
+
+.link_to_top {
+  width: 120px;
+  height: 120px;
+  background-color: #66CCFF;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  line-height: 120px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
