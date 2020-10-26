@@ -25,6 +25,11 @@ header .company_name {
   margin-left: 20px;
 }
 
+header .company_name a {
+  color: black;
+  text-decoration: none;
+}
+
 .open_hamburger, #user_menu {
   display: none;
 }
