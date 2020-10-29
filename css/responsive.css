@@ -84,6 +84,7 @@
     font-size: 16px;
     width: 100%;
     height: 44px;
+    line-height: 44px;
   }
 
   .user_menu_ul li a {
@@ -324,6 +325,49 @@
     margin-right: 12px;
   }
 
+  .advertising_link {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /*width: 220px;*/
+    height: 60px;
+    display: flex;
+    width: 100%;
+    /*border-radius: 10px;*/
+    text-decoration: none;
+    color: black;
+  }
+
+  .advertising_link p {
+    line-height: 60px;
+    padding: 0 12px;
+    background: linear-gradient(to right, #00CCFF, #99FFFF);
+    transition: background-color 1s;
+    width: 100%;
+    text-align: center;
+  }
+
+  .advertising_link p:hover {
+    /*opacity: 0.7;*/
+    /*transition: 1s;*/
+    /*background: linear-gradient(to right, blue, white);;*/
+  }
+
+  .advertising_link p img {
+    width: 100px;
+  }
+
+  .advertising_link_arrow {
+    background-color: #ccc;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .midosuji {
+    border-bottom: 1.5px solid #D90200;
+  }
+
 
 /*
   .company_information ul {
@@ -333,6 +377,124 @@
   .company_information ul li {
     border-top: 1px solid #ccc;
   }*/
+  .licence_page_wrapper {
+    height: 300px;
+    background-image: url(../images/employee2_white.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .licence_page_wrapper h3 {
+    font-size: 45px;
+  }
+
+  .licence_page_wrapper p {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+
+  .licence_page_message h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 50px;
+    letter-spacing: 2px;
+  }
+
+  .licence_page_elements {
+    width: 90%;
+    display: block;
+    margin: 40px auto 130px;
+    justify-content: space-around;
+  }
+
+  .licence_page_elements img {
+    width: 180px;
+    border-radius: 50%;
+    background-color: black;
+    border: 5px solid #66CCFF;
+  }
+
+  .licence_page_element {
+    width: 100%;
+    text-align: center;
+  }
+
+  .licence_page_element p {
+    margin: 30px auto 50px;
+    line-height: 28px;
+    color: gray;
+    letter-spacing: 3px;
+    width: 80%;
+    font-size: 18px;
+  }
+
+  footer {
+    height: 180px;
+    background-color: #333;
+    background-color: #f7f7f7;
+    border-top: 1px solid #f0f1f1;
+    padding-top: 40px;
+  }
+
+  .footer_wrapper {
+    width: 88%;
+    margin: 0 auto;
+    display: block;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .footer_wrapper h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .footer_wrapper_left_address {
+    margin-bottom: 14px;
+    color: gray;
+    font-size: 15px;
+  }
+
+  .footer_wrapper_left_phone {
+    font-size: 20px;
+  }
+
+  .footer_wrapper_left_phone a {
+    color: black;
+  }
+
+  .copy_right_part_pc {
+    display: none;
+  }
+
+  .copy_right_part_phone {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    padding-bottom: 90px;
+  }
+
+  .footer_wrapper_right {
+    display: none;
+  }
+
+  .footer_wrapper_right a {
+    color: black;
+    text-decoration: none;
+    margin-right: 18px;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .footer_wrapper_right a:hover {
+    opacity: 0.3;
+  }
 
 
 

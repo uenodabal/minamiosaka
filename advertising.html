@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>南大阪建設株式会社の公式ページ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="company_name"><a href="index.html">南大阪建設株式会社</a></h1>
+      <!-- スマホ版メニュー -->
+      <i class="fas fa-bars open_hamburger"></i>
+      <div id="user_menu">
+        <nav>
+          <ul class="user_menu_ul">
+            <a href="index.html"><li>ホーム</li></a>
+            <a href="results.html"><li>施工実績一覧</li></a>
+            <a href="licences.html"><li>資格について</li></a>
+            <li>求人情報</li>
+          </ul>
+        </nav>
+        <i class="fas fa-times close_hamburger"></i>
+      </div>
+      <!-- PC版メニュー -->
+      <ul class="header_list">
+        <a href="results.html"><li>施工実績一覧</li></a>
+        <a href="licences.html"><li>資格について</li></a>
+        <li>求人情報</li>
+      </ul>
+    </header>
+    <div class="advertising_page">
+     <!--  <img src="images/advertising2.jpg" class="advertising2">
+      <img src="images/advertising1.jpg" class="advertising1"> -->
+      <p class="advertising_page_p">広告掲載</p>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(".open_hamburger").on('click', function() {
+        $('body').addClass('open');
+      })
+
+      $(".close_hamburger").on('click', function() {
+        $('body').removeClass('open');
+      })
+    </script>
+</html>

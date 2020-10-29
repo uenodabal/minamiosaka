@@ -14,14 +14,15 @@
   </head>
   <body>
     <header>
-      <h1 class="company_name">南大阪建設株式会社</h1>
+      <h1 class="company_name"><a href="index.html">南大阪建設株式会社</a></h1>
       <!-- スマホ版メニュー -->
       <i class="fas fa-bars open_hamburger"></i>
       <div id="user_menu">
         <nav>
           <ul class="user_menu_ul">
-            <li><a href="results.html">施工実績一覧</a></li>
-            <li>資格について</li>
+            <a href="index.html"><li>ホーム</li></a>
+            <a href="results.html"><li>施工実績一覧</li></a>
+            <a href="licences.html"><li>資格について</li></a>
             <li>求人情報</li>
           </ul>
         </nav>
@@ -29,8 +30,8 @@
       </div>
       <!-- PC版メニュー -->
       <ul class="header_list">
-        <li><a href="results.html">施工実績一覧</a></li>
-        <li>資格について</li>
+        <a href="results.html"><li>施工実績一覧</li></a>
+        <a href="licences.html"><li>資格について</li></a>
         <li>求人情報</li>
       </ul>
     </header>
@@ -350,12 +351,34 @@
         </div>
       </div>
     </div>
-    <a href="index.html" class="link_to_top"><i class="fas fa-angle-left"></i>トップへ戻る</a>
+    <a href="advertising.html" class="advertising_link">
+      <p>
+        <span class="midosuji">地下鉄御堂筋線</span>に広告掲載中
+        <!-- <img src="images/advertising2.jpg"> -->
+      </p>
+      <div class="advertising_link_arrow">>></div>
+    </a>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer_wrapper_right">
+          <a href="index.html">ホーム</a>
+          <a href="results.html">施工実績一覧</a>
+          <a href="licences.html">資格について</a>
+          <a href="index.html">求人情報</a>
+        </div>
+        <div class="footer_wrapper_left">
+          <h1>南大阪建設株式会社</h1>
+          <p class="footer_wrapper_left_address">大阪市阿倍野区阪南町1-27-2 昭和町ビル7階</p>
+          <p class="footer_wrapper_left_phone">TEL: <a href="tel:+81-6-6626-5858">06-6626-5858</a></p>
+        </div>
+      </div>
+    </footer>
+    <h3 class="copy_right_part_pc">&copy; 2020 Minami Osaka Construction Co.  All Rights Reserved.</h3>
+    <h3 class="copy_right_part_phone">&copy; 2020 Minami Osaka Construction Co.<br>All Rights Reserved.</h3>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
     <script>
       $(".open_hamburger").on('click', function() {
-        console.log(1);
         $('body').addClass('open');
       })
 

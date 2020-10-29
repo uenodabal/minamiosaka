@@ -1,1 +1,95 @@
-aaa
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>南大阪建設株式会社の公式ページ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="company_name"><a href="index.html">南大阪建設株式会社</a></h1>
+      <!-- スマホ版メニュー -->
+      <i class="fas fa-bars open_hamburger"></i>
+      <div id="user_menu">
+        <nav>
+          <ul class="user_menu_ul">
+            <a href="index.html"><li>ホーム</li></a>
+            <a href="results.html"><li>施工実績一覧</li></a>
+            <a href="licences.html"><li>資格について</li></a>
+            <li>求人情報</li>
+          </ul>
+        </nav>
+        <i class="fas fa-times close_hamburger"></i>
+      </div>
+      <!-- PC版メニュー -->
+      <ul class="header_list">
+        <a href="results.html"><li>施工実績一覧</li></a>
+        <a href="licences.html"><li>資格について</li></a>
+        <li>求人情報</li>
+      </ul>
+    </header>
+    <div class="licence_page_wrapper">
+      <!-- <img src="images/employee2_white.jpg" style="width: 100%;"> -->
+      <h3>Licences</h3>
+      <p>資格について</p>
+    </div>
+    <div class="licence_page_message">
+      <h4>我が社は、従業員の資格取得や技術講習受講を応援しています。<br>また、常に技術向上を心がけ、いかなる工事にも対応できる人材を育てます。</h4>
+      <h4><span style="border-bottom: 3px solid #66ccff;">資格・講習一覧</span></h4>
+    </div>
+    <div class="licence_page_elements">
+      <div class="licence_page_element">
+        <img src="images/operator.jpg">
+        <p>例：1級土木施工管理技士、2級土木施工管理技士、登録橋梁基幹技能者、職長・安全衛生責任者（リスクアセスメント含む）、日本鉄道工事管理者、鋼橋架設等作業主任者、建築物等の鉄骨組立作業主任者、鉄骨組立等作業主任者、型枠支保工組立等作業主任者、足場組立等作業主任者、労務管理、雇用管理士など</p>
+      </div>
+      <div class="licence_page_element">
+        <img src="images/excavator.jpg">
+        <p>例：小型移動式クレーン、玉掛技能者、高所作業車、ジャッキ式吊り上げ機械運転、動力巻上装置運転、フォークリフト運転、床上げ操作式クレーンなど</p>
+      </div>
+      <div class="licence_page_element">
+        <img src="images/impact_driver.jpg">
+        <p>例：アーク溶接、ガス溶接技術者、あと施工アンカー施工士、ウィンチ動力巻上げ技能者、施工管理者のための足場点検実務者、研削といし取替・試運転作業者、太陽光発電施工技術など</p>
+      </div>
+    </div>
+    <a href="advertising.html" class="advertising_link">
+      <p>
+        <span class="midosuji">地下鉄御堂筋線</span>に広告掲載中
+      </p>
+      <div class="advertising_link_arrow">>></div>
+    </a>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer_wrapper_right">
+          <a href="index.html">ホーム</a>
+          <a href="results.html">施工実績一覧</a>
+          <a href="licences.html">資格について</a>
+          <a href="index.html">求人情報</a>
+        </div>
+        <div class="footer_wrapper_left">
+          <h1>南大阪建設株式会社</h1>
+          <p class="footer_wrapper_left_address">大阪市阿倍野区阪南町1-27-2 昭和町ビル7階</p>
+          <p class="footer_wrapper_left_phone">TEL: <a href="tel:+81-6-6626-5858">06-6626-5858</a></p>
+        </div>
+      </div>
+    </footer>
+    <h3 class="copy_right_part_pc">&copy; 2020 Minami Osaka Construction Co.  All Rights Reserved.</h3>
+    <h3 class="copy_right_part_phone">&copy; 2020 Minami Osaka Construction Co.<br>All Rights Reserved.</h3>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+      $(".open_hamburger").on('click', function() {
+        $('body').addClass('open');
+      })
+
+      $(".close_hamburger").on('click', function() {
+        $('body').removeClass('open');
+      })
+    </script>
+  </body>
+</html>
