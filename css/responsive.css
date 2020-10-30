@@ -402,9 +402,10 @@
   .sub_page_message h4 {
     font-size: 20px;
     text-align: center;
-    margin-top: 40px;
     line-height: 36px;
     letter-spacing: 1px;
+    width: 88%;
+    margin: 40px auto 0;
   }
 
   .advertising_pictures {
