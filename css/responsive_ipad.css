@@ -1,5 +1,4 @@
-@media screen and (max-width: 480px) {
-  /* 480px以下に適用されるCSS（スマホ用） */
+@media screen and (max-width: 959px) {
   header {
     width: 100%;
     height: 40px;
@@ -93,19 +92,18 @@
 
 
   .corporate_philosophy {
-    font-size: 30px;
-    position: absolute;
-    background-color: white;
-    opacity: 0.8;
-    top: 220px;
-    left: 20px;
-    border: none;
+    opacity: 1;
     line-height: 70px;
-    /*text-decoration: underline;*/
-    /*text-shadow: 3px 3px 3px #3399FF;*/
-    /*text-shadow: 3px 3px 3px black;*/
-    text-shadow: none;
     padding-left: 14px;
+    color: #00CCFF;
+    text-shadow: 3px 3px 3px #3399FF;
+    font-size: 42px;
+    font-weight: bold;
+    border-bottom: 3px solid #00CCFF;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 350px;
+    left: 80px;
   }
 
   .wrapper_theme h3 {
@@ -115,12 +113,13 @@
     border-bottom: 3px solid #00CCFF;
     display: inline-block;
   }
+
   .second_wrapper .wrapper_theme h3 {
     border: none;
     width: 80%;
     line-height: 40px;
     margin: 38px auto 0;
-    padding-top: 20px;
+    padding-top: 66px;
   }
 
   .second_wrapper .wrapper_theme h3:before, .second_wrapper .wrapper_theme h3:after {
@@ -137,6 +136,7 @@
 
   .second_wrapper_container {
     display: block;
+    text-align: center;
   }
 
   .second_wrapper_container_picture {
@@ -176,8 +176,42 @@
   }
 
   .slick_business_pictures {
-    width: 100%;
-    /*height: 320px;*/
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .fourth_wrapper {
+    padding-bottom: 250px;
+  }
+
+  .fourth_wrapper_container p {
+    font-size: 26px;
+    background-color: #eee;
+    opacity: 0.9;
+    line-height: 60px;
+    padding: 20px 32px;
+    display: inline-block;
+    position: absolute;
+    top: 350px;
+    left: 120px;
+  }
+
+  .link_to_licences {
+    display: inline-block;
+    position: absolute;
+    top: 580px;
+    left: 88px;
+  }
+
+  .link_to_licences a, .link_to_results a {
+    /*color: #00CCFF;*/
+  }
+
+  .employee_image {
+    width: 75%;
+    margin-top: 60px;
+    border: 1px solid #ccc;
+    box-shadow: 28px 28px 0px 0 #66CCFF;
   }
 
 
@@ -189,7 +223,7 @@
     width: 100%;
     margin-bottom: 20px;
   }
-
+/*
   .fourth_wrapper_container p {
     background-color: white;
     opacity: 0.9;
@@ -208,7 +242,7 @@
     margin-top: 30px;
     border: none;
     box-shadow: none;
-  }
+  }*/
 
   .company_information {
     width: 100%;
@@ -252,8 +286,8 @@
 
   .sub_page_slick_business_pictures {
     margin: 0 auto;
-    width: 100%;
-    height: 280px;
+    width: 75%;
+    height: 320px;
   }
 
   .image_caption p {
@@ -286,7 +320,8 @@
   }
 
   .result_lists_phone ul li {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    font-size: 22px;
   }
 
   .result_lists_phone_new, .result_lists_phone_fixed {
@@ -399,7 +434,7 @@
   }
 
   .sub_page_message h4 {
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
     line-height: 36px;
     letter-spacing: 1px;
@@ -528,8 +563,5 @@
   .footer_wrapper_right a:hover {
     opacity: 0.3;
   }
-
-
-
 
 }

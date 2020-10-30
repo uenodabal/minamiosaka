@@ -90,15 +90,10 @@ header .company_name a {
 }
 
 .corporate_philosophy {
-  color: rgb(6,128,182);
-  color: #00FFFF;
-  color: #33CCFF;
   color: #00CCFF;
   text-shadow: 3px 3px 3px #3399FF;
   font-size: 42px;
   font-weight: bold;
-  border-bottom: 3px solid #00FFFF;
-  border-bottom: 3px solid #33CCFF;
   border-bottom: 3px solid #00CCFF;
   letter-spacing: 10px;
   position: absolute;
@@ -644,7 +639,7 @@ body > div.advertising_pictures > div:nth-child(1) > p {
 }
 
 .recruit_information table {
-  margin: 0 auto;
+  margin: 40px auto 120px;
 }
 
 .recruit_information table tr {
