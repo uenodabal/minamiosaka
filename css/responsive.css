@@ -377,30 +377,63 @@
   .company_information ul li {
     border-top: 1px solid #ccc;
   }*/
-  .licence_page_wrapper {
+
+  .sub_page_wrapper {
     height: 300px;
-    background-image: url(../images/employee2_white.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .licence_page_wrapper {
+    background-image: url(../images/employee2_white.jpg);
+  }
 
-  .licence_page_wrapper h3 {
+
+  .sub_page_wrapper h3 {
     font-size: 45px;
   }
 
-  .licence_page_wrapper p {
+  .sub_page_wrapper p {
     font-size: 20px;
     margin-top: 12px;
   }
 
-  .licence_page_message h4 {
+  .sub_page_message h4 {
     font-size: 20px;
     text-align: center;
     margin-top: 40px;
-    line-height: 40px;
-    letter-spacing: 2px;
+    line-height: 36px;
+    letter-spacing: 1px;
+  }
+
+  .advertising_pictures {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    padding: 0 20px;
+    text-align: center;
+    display: block;
+  }
+
+
+  body > div.advertising_pictures > div:nth-child(1) > p {
+    margin-left: 0;
+  }
+
+  .advertising_pictures .advertising2 {
+    border:1px #eee solid;
+    width: 100%;
+    /*width: 40%;*/
+    height: inherit;
+    /*box-shadow: 28px 28px 0px 0 #66CCFF;*/
+  }
+
+  .advertising_pictures .advertising1 {
+    border:1px #eee solid;
+    width: 100%;
+    height: inherit;
+    margin: 0 0 30px 0;
+    /*box-shadow: 28px 28px 0px 0 #66CCFF;*/
   }
 
   .licence_page_elements {

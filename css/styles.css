@@ -393,8 +393,6 @@ header .company_name a {
   width: 180px;
 }
 
-.company_information table tr td:first-child{
-}
 
 .sub_page_container {
   padding-top: 50px;
@@ -403,6 +401,10 @@ header .company_name a {
 .sub_page_theme {
   width: 100%;
   text-align: center;
+}
+
+.results_wrapper {
+  background-image: url("../images/main_image3_bokashi.jpg");
 }
 
 .sub_page_theme h3 {
@@ -429,7 +431,6 @@ header .company_name a {
 
 
 .results_slick_part {
-  /*display: flex;*/
   text-align: center;
 }
 
@@ -537,29 +538,12 @@ header .company_name a {
   border-bottom: 1.5px solid #D90200;
 }
 
-.advertising_page {
-  display: flex;
-  width: 86%;
-  margin: 140px auto 0;
+.midosuji2 {
+  border-bottom: 2px solid #D90200;
 }
 
-.advertising_page .advertising2 {
-  border:1px #eee solid;
-  /*width: 40%;*/
-  height: 300px;
-  /*box-shadow: 28px 28px 0px 0 #66CCFF;*/
-}
-
-.advertising_page .advertising1 {
-  border:1px #eee solid;
-  /*width: 40%;*/
-  height: 150px;
-  /*box-shadow: 28px 28px 0px 0 #66CCFF;*/
-}
-
-.licence_page_wrapper {
+.sub_page_wrapper {
   height: 360px;
-  background-image: url(../images/employee2_white.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -567,16 +551,59 @@ header .company_name a {
   padding-top: 140px;
 }
 
-.licence_page_wrapper h3 {
-  font-size: 60px;
+.advertising_wrapper {
+  background-image: url(../images/advertising1_bokashi.jpg);
 }
 
-.licence_page_wrapper p {
+.advertising_wrapper h2 {
+  font-size: 32px;
+}
+
+.advertising_pictures {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+body > div.advertising_pictures > div:nth-child(1) > p {
+  margin-left: 45px;
+}
+
+.advertising_pictures .advertising2 {
+  border:1px #eee solid;
+  /*width: 40%;*/
+  height: 600px;
+  /*box-shadow: 28px 28px 0px 0 #66CCFF;*/
+}
+
+.advertising_pictures .advertising1 {
+  border:1px #eee solid;
+  /*width: 40%;*/
+  height: 400px;
+  margin: 0 50px 100px;
+  /*box-shadow: 28px 28px 0px 0 #66CCFF;*/
+}
+
+.sub_page_wrapper h3 {
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.sub_page_wrapper p {
   font-size: 24px;
   margin-top: 12px;
 }
 
-.licence_page_message h4 {
+.licence_page_wrapper {
+  background-image: url(../images/employee2_white_bokashi.jpg);
+}
+/*
+.sub_page_message {
+  border-bottom: 1px solid #eee;
+}*/
+
+.sub_page_message h4 {
   font-size: 28px;
   text-align: center;
   margin-top: 60px;
@@ -611,6 +638,45 @@ header .company_name a {
   width: 80%;
   font-size: 18px;
 }
+
+.recruit_wrapper {
+  background-image: url("../images/recruit_bokashi.jpg");
+}
+
+.recruit_information table {
+  margin: 0 auto;
+}
+
+.recruit_information table tr {
+  /*text-align: center;*/
+  height: 40px;
+  line-height: 30px;
+}
+
+.recruit_information table tr td, .recruit_information table tr th {
+  border: 1px solid #ccc;
+  /*border-left: none;*/
+}
+
+.recruit_information table tr td iframe {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.recruit_information table tr td {
+  padding: 10px 30px 10px 30px;
+  border-left: none;
+  border-right: none;
+}
+
+.recruit_information table tr th {
+  text-align: center;
+  /*padding-left: 30px;*/
+  border-right: none;
+  border-left: none;
+  width: 180px;
+}
+
 
 footer {
   height: 180px;
