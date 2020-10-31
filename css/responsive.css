@@ -210,6 +210,12 @@
     box-shadow: none;
   }
 
+  .link_to_licences {
+    position: absolute;
+    top: 580px;
+    left: 10px;
+  }
+
   .company_information {
     width: 100%;
     margin: 30px auto 0;
