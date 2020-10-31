@@ -190,6 +190,10 @@
     margin-bottom: 20px;
   }
 
+  .fourth_wrapper {
+    padding-bottom: 150px;
+  }
+
   .fourth_wrapper_container p {
     background-color: white;
     opacity: 0.9;
