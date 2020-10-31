@@ -465,6 +465,38 @@
     font-size: 18px;
   }
 
+  .recruit_information table {
+    width: 90%;
+  }
+
+  .recruit_information table tr {
+    display: block;
+    height: inherit;
+    border-top: 1px solid #ccc;
+  }
+
+  .recruit_information table tr th {
+    text-align: left;
+    padding-top: 8px;
+  }
+
+  .recruit_information table iframe {
+    width: 100%;
+  }
+
+  .recruit_information table tr td {
+    /*text-align: center;*/
+    padding: 4px 0 10px 10px;
+  }
+
+
+  .recruit_information table tr td, .recruit_information table tr th {
+    border: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+
   footer {
     height: 180px;
     background-color: #333;
