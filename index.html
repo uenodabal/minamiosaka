@@ -22,6 +22,7 @@
         <nav>
           <ul class="user_menu_ul">
             <a href="index.html"><li>ホーム</li></a>
+            <a href="#company_info"><li>企業情報</li></a>
             <a href="results.html"><li>施工実績一覧</li></a>
             <a href="licences.html"><li>資格について</li></a>
             <a href="recruit.html"><li>採用情報</li></a>
@@ -32,6 +33,7 @@
       </div>
       <!-- PC版メニュー -->
       <ul class="header_list">
+        <a href="#company_info"><li>企業情報</li></a>
         <a href="results.html"><li>施工実績一覧</li></a>
         <a href="licences.html"><li>資格について</li></a>
         <a href="recruit.html"><li>採用情報</li></a>
@@ -140,7 +142,7 @@
     </div>
     <div class="fifth_wrapper">
       <div class="wrapper_theme">
-        <h3>企業情報</h3>
+        <h3 id="company_info">企業情報</h3>
         <p>Information.</p>
       </div>
       <div class="company_information">
@@ -172,6 +174,10 @@
           <tr>
             <th>TEL</th>
             <td><a href="tel:+81-6-6626-5858">06-6626-5858</a></td>
+          </tr>
+          <tr>
+            <th>Mail</th>
+            <td><a href="mailto:minamiosaka8888@heart.ocn.ne.jp">minamiosaka8888@heart.ocn.ne.jp</a></td>
           </tr>
           <tr>
             <th>FAX</th>
@@ -237,6 +243,39 @@
       $(".close_hamburger").on('click', function() {
         $('body').removeClass('open');
       })
+
+      var Ease = {
+        easeInOut: t => t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1
+      }
+      var duration = 500;
+      window.addEventListener('DOMContentLoaded', () => {
+        var smoothScrollTriggers = document.querySelectorAll('a[href^="#"]');
+        smoothScrollTriggers.forEach(function (smoothScrollTrigger) {
+          smoothScrollTrigger.addEventListener('click', function (e) {
+            $('body').removeClass('open');
+            var href = smoothScrollTrigger.getAttribute('href');
+            var currentPostion = document.documentElement.scrollTop || document.body.scrollTop;
+            var targetElement = document.getElementById(href.replace('#', ''));
+            if (targetElement) {
+              e.preventDefault();
+              e.stopPropagation();
+              var targetPosition = window.pageYOffset + targetElement.getBoundingClientRect().top - 115;
+              var startTime = performance.now();
+              var loop = function (nowTime) {
+                var time = nowTime - startTime;
+                var normalizedTime = time / duration;
+                if (normalizedTime < 1) {
+                  window.scrollTo(0, currentPostion + ((targetPosition - currentPostion) * Ease.easeInOut(normalizedTime)));
+                  requestAnimationFrame(loop);
+                } else {
+                  window.scrollTo(0, targetPosition);
+                }
+              }
+              requestAnimationFrame(loop);
+            }
+          });
+        });
+      });
     </script>
   </body>
 </html>
