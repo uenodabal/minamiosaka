@@ -22,7 +22,10 @@ header {
 }
 
 header .company_name {
+  font-size: 2em;
+  margin: 0.67em 0;
   margin-left: 20px;
+  font-weight: bold;
 }
 
 header .company_name a {
@@ -585,7 +588,7 @@ body > div.advertising_pictures > div:nth-child(1) > p {
   letter-spacing: 2px;
 }
 
-.sub_page_wrapper p {
+.sub_page_wrapper h1 {
   font-size: 24px;
   margin-top: 12px;
 }
