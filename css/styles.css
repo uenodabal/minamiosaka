@@ -583,6 +583,11 @@ body > div.advertising_pictures > div:nth-child(1) > p {
   /*box-shadow: 28px 28px 0px 0 #66CCFF;*/
 }
 
+.csr_pictures {
+  width: 90%;
+  margin: 0 auto 80px;
+}
+
 .sub_page_wrapper h3 {
   font-size: 60px;
   letter-spacing: 2px;
