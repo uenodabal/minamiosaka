@@ -471,6 +471,16 @@
     /*box-shadow: 28px 28px 0px 0 #66CCFF;*/
   }
 
+  .ad_one_picture {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .ad_one_picture_image {
+    width: 100%;
+    border: 1px #eee solid;
+  }
+
   .licence_page_elements {
     width: 90%;
     display: block;

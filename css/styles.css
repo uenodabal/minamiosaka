@@ -588,6 +588,16 @@ body > div.advertising_pictures > div:nth-child(1) > p {
   margin: 0 auto 80px;
 }
 
+.ad_one_picture {
+  width: 40%;
+  margin: 20px auto;
+}
+
+.ad_one_picture_image {
+  width: 100%;
+  border: 1px #eee solid;
+}
+
 .sub_page_wrapper h3 {
   font-size: 60px;
   letter-spacing: 2px;
