@@ -420,12 +420,17 @@
 
   .advertising_pictures {
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     padding: 0 20px;
     text-align: center;
     display: block;
   }
 
+.bridge_ad {
+  width: 88%;
+  margin: auto;
+  margin-bottom: 60px;
+}
 
   body > div.advertising_pictures > div:nth-child(1) > p {
     margin-left: 0;
