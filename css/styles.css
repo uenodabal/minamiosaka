@@ -449,7 +449,7 @@ header .company_name a {
 .results_lists table {
   width: 100%;
   margin: 0 auto;
-  display: block;
+  /*display: block;*/
 }
 
 .results_lists table tr {
