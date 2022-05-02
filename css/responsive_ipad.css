@@ -155,6 +155,28 @@
     padding-bottom: 40px;
   }
 
+  .third_wrapper_video {
+    position: relative;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .third_wrapper_video:before {
+    content:"";
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  .third_wrapper_video iframe {
+    width: 96%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   .third_wrapper_container {
     display: block;
   }
