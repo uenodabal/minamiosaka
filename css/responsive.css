@@ -446,11 +446,17 @@
     display: block;
   }
 
-.bridge_ad {
-  width: 88%;
-  margin: auto;
-  margin-bottom: 60px;
-}
+  .csr_name {
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .bridge_ad {
+    width: 88%;
+    margin: auto;
+    margin-bottom: 60px;
+  }
 
   body > div.advertising_pictures > div:nth-child(1) > p {
     margin-left: 0;

@@ -579,6 +579,12 @@ header .company_name a {
   font-size: 32px;
 }
 
+.csr_name {
+  font-size: 24px;
+  margin-top: 50px;
+  text-align: center;
+}
+
 .advertising_pictures {
   display: flex;
   align-items: center;
@@ -617,12 +623,12 @@ body > div.advertising_pictures > div:nth-child(1) > p {
 
 .csr_pictures {
   width: 90%;
-  margin: 0 auto 80px;
+  margin: 30px auto 80px;
 }
 
 .ad_one_picture {
   width: 40%;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 .ad_one_picture_image {
