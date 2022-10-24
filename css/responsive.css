@@ -462,7 +462,7 @@
     margin-left: 0;
   }
 
-  .advertising_pictures .advertising2 {
+  .advertising_pictures .advertising2, .advertising_pictures .advertising2_same_width {
     border:1px #eee solid;
     width: 100%;
     /*width: 40%;*/
@@ -470,7 +470,7 @@
     /*box-shadow: 28px 28px 0px 0 #66CCFF;*/
   }
 
-  .advertising_pictures .advertising1 {
+  .advertising_pictures .advertising1, .advertising_pictures .advertising1_same_width {
     border:1px #eee solid;
     width: 100%;
     height: inherit;
