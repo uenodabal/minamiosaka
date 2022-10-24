@@ -587,7 +587,7 @@ header .company_name a {
 
 .advertising_pictures {
   display: flex;
-  align-items: center;
+  justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -619,6 +619,20 @@ body > div.advertising_pictures > div:nth-child(1) > p {
   height: 400px;
   margin: 0 50px 100px;
   /*box-shadow: 28px 28px 0px 0 #66CCFF;*/
+}
+
+.advertising_pictures .advertising1_same_width {
+  border:1px #eee solid;
+  /*width: 40%;*/
+  height: 600px;
+  margin: 0 50px 100px;
+}
+
+.advertising_pictures .advertising2_same_width {
+  border:1px #eee solid;
+  /*width: 40%;*/
+  height: 600px;
+  margin: 0 50px 100px;
 }
 
 .csr_pictures {
