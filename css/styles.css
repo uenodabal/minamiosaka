@@ -562,6 +562,10 @@ header .company_name a {
   border-bottom: 2px solid #D90200;
 }
 
+.tanimachi {
+  border-bottom: 2px solid #660165;
+}
+
 .sub_page_wrapper {
   height: 360px;
   background-position: center;
