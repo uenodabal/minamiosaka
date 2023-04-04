@@ -22,4 +22,8 @@ window.addEventListener('DOMContentLoaded', function(){
       }
     })
   }
+  contact_form_submit.addEventListener('click', function() {
+    console.log(aaa);
+    contact_form_submit.disabled = true;
+  });
 });
