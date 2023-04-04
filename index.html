@@ -38,17 +38,18 @@
             <a href="licences.html"><li>資格について</li></a>
             <a href="recruit.html"><li>採用情報</li></a>
             <a href="advertising.html"><li>広告掲載について</li></a>
+            <a href="#contact"><li>お問い合わせ</li></a>
           </ul>
         </nav>
         <i class="fas fa-times close_hamburger"></i>
       </div>
       <!-- PC版メニュー -->
       <ul class="header_list">
-        <a href="#company_info"><li>企業情報</li></a>
         <a href="results.html"><li>施工実績</li></a>
         <a href="licences.html"><li>資格について</li></a>
         <a href="recruit.html"><li>採用情報</li></a>
         <a href="advertising.html"><li>広告掲載について</li></a>
+        <a href="#contact"><li>お問い合わせ</li></a>
       </ul>
     </header>
     <div id="background_image">
@@ -232,7 +233,49 @@
         </table>
       </div>
     </div>
-    <a href="advertising.html" class="advertising_link">
+    <div class="sixth_wrapper">
+      <div class="wrapper_theme">
+        <h3 id="contact">お問い合せ</h3>
+        <p>Contact.</p>
+      </div>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://uenodabal.github.io/minamiosaka/thanks.html';}"></iframe>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfuZosNPkVvz3VPt14kAGaFUYs0oXOyz9ZaKA74vD_ZVpFd4A/formResponse" name="contact_form" class="contact_form" onsubmit="submitted=true;" target="hidden_iframe">
+          <div class="form_element">
+            <label for="company_name" class="contact_form_pc_label"><span class="required_question">*</span>会社名<span class="required_question" style="font-size: 14px;">(*は必須項目です)</span></label>
+            <input class="input_text_required" id="company_name" type="text" name="entry.1359539871" placeholder="〇〇株式会社">
+          </div>
+          <div class="form_element">
+            <label for="name" class="contact_form_pc_label"><span class="required_question">*</span>お名前</label>
+            <input class="input_text_required" id="name" type="text" name="entry.1206328251" placeholder="鈴木太郎">
+          </div>
+          <div class="form_element">
+            <label for="email" class="contact_form_pc_label"><span class="required_question">*</span>メールアドレス</label>
+            <input class="input_text_required" id="email" type="email" name="entry.1196315197" placeholder="aaaa@gmail.com">
+          </div>
+          <div class="form_element">
+            <label for="phone_number" class="contact_form_pc_label"><span class="required_question">*</span>お電話番号</label>
+            <input class="input_text_required" id="phone_number" type="number" name="entry.2010824883" placeholder="080xxxxxxxx">
+          </div>
+          <div class="form_element">
+            <label for="questions" class="contact_form_pc_label"><span class="required_question">*</span>お問い合わせ内容</label>
+            <textarea id="questions" class="input_text_required" type="text" name="entry.1198148131"></textarea>
+          </div>
+          <input id="contact_form_submit" type="submit" value="送信">
+        </form>
+    </div>
+    <div class="sp_bottom">
+      <a href="#contact" class="contact_link_sp">
+        <p>
+          お問い合わせ
+        </p>
+      </a>
+      <a href="advertising.html" class="advertising_link_sp">
+        <p>
+          <span class="midosuji">御堂筋線</span>に広告掲載
+        </p>
+      </a>
+    </div>
+    <a href="advertising.html" class="advertising_link_pc">
       <p>
         <span class="midosuji">御堂筋線</span>に広告掲載(+CSRについて)
         <!-- <img src="images/advertising2.jpg"> -->
@@ -246,6 +289,7 @@
           <a href="results.html">施工実績</a>
           <a href="licences.html">資格について</a>
           <a href="recruit.html">採用情報</a>
+          <a href="#contact">お問い合わせ</a>
         </div>
         <div class="footer_wrapper_left">
           <h1>南大阪建設株式会社</h1>
@@ -254,10 +298,11 @@
         </div>
       </div>
     </footer>
-    <h3 class="copy_right_part_pc">&copy; 2020 Minami Osaka Construction Co.  All Rights Reserved.</h3>
-    <h3 class="copy_right_part_phone">&copy; 2020 Minami Osaka Construction Co.<br>All Rights Reserved.</h3>
+    <h3 class="copy_right_part_pc">&copy; 2023 Minami Osaka Construction Co.  All Rights Reserved.</h3>
+    <h3 class="copy_right_part_phone">&copy; 2023 Minami Osaka Construction Co.<br>All Rights Reserved.</h3>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
     <script>
       $(".slick_ul").slick({
         autoplay: true,
