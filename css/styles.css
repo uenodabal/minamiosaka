@@ -459,7 +459,7 @@ header .company_name a {
 }
 
 .results_lists {
-  width: 80%;
+  width: 84%;
   margin: 60px auto;
 }
 
@@ -497,6 +497,42 @@ header .company_name a {
   font-size: 22px;
   padding: 8px;
   width: 180px;
+}
+
+.result_lists_pc_table {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 12px;
+}
+
+.result_lists_pc_ul {
+  /*border: 1px #ccc solid;*/
+  width: 50%;
+  /*padding: 10px;*/
+  text-align: center;
+}
+
+.result_lists_pc_ul p {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 14px;
+  border: 1px #ccc solid;
+}
+
+.result_lists_pc_ul li {
+  width: 100%;
+  text-align: left;
+  padding: 14px;
+  border: 1px #ccc solid;
+  border-top: none;
+}
+
+/*.result_lists_pc_ul li:first-of-type {
+  border-top: 1px #ccc solid;
+}*/
+
+.result_lists_pc_ul_right li, .result_lists_pc_ul_right p {
+  border-left: none;
 }
 
 .link_to_top {

@@ -340,6 +340,10 @@
     display: none;
   }
 
+  .result_lists_pc_table {
+    display: none;
+  }
+
   .result_lists_phone ul li {
     margin-bottom: 8px;
     font-size: 22px;
