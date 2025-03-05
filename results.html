@@ -19,31 +19,31 @@
     </script>
     <script src="https://apis.google.com/js/api.js"></script>
     <script>
-      function init() {
-        gapi.load('client', function() {
-          console.log("gapi loaded successfully.");
-          gapi.client.init({
-            apiKey: 'AIzaSyC2BtT-SdVow5ocWr0NrJwiAsdolT5sXlI',
-            discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
-          }).then(function() {
-            console.log("gapi.client initialized successfully.");
-            return gapi.client.sheets.spreadsheets.values.get({
-              spreadsheetId: '1k4YvTJsyGheOydRCYUO238tmMoUNY2qSymnaKTNBETE',
-              range: 'シート1!A1:B1000',
-            });
-          }).then(function(response) {
-            console.log("Google Sheets API request successful:", response);
-            var data = response.result.values;
-            if (data && data.length > 0) {
-              updateListsAndTable(data);
-            }
-            console.log('3');
-          }).catch(function(error) {
-            console.error('Error during API request:', error);
-          });
-          console.log('4'); // この位置で実行されるのは正常です
-        });
-      }
+      // function init() {
+      //   gapi.load('client', function() {
+      //     console.log("gapi loaded successfully.");
+      //     gapi.client.init({
+      //       apiKey: '///',
+      //       discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
+      //     }).then(function() {
+      //       console.log("gapi.client initialized successfully.");
+      //       return gapi.client.sheets.spreadsheets.values.get({
+      //         spreadsheetId: '1k4YvTJsyGheOydRCYUO238tmMoUNY2qSymnaKTNBETE',
+      //         range: 'シート1!A1:B1000',
+      //       });
+      //     }).then(function(response) {
+      //       console.log("Google Sheets API request successful:", response);
+      //       var data = response.result.values;
+      //       if (data && data.length > 0) {
+      //         updateListsAndTable(data);
+      //       }
+      //       console.log('3');
+      //     }).catch(function(error) {
+      //       console.error('Error during API request:', error);
+      //     });
+      //     console.log('4'); // この位置で実行されるのは正常です
+      //   });
+      // }
 
 
 
