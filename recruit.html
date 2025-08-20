@@ -66,6 +66,59 @@
     </div>
     <div class="recruit_message sub_page_message">
       <h4>社員を「<span class="midosuji2">人財</span>」と思い、大切にしています。<br>未経験の方でも経験豊富な社員が<span class="underline">しっかりと丁寧に</span>教えるので安心です。</h4>
+    </div>
+
+    <div class="results_slick_part" style="width: 90%; margin: 40px auto 0;">
+      <div class="recruit_message sub_page_message">
+        <h4><span style="border-bottom: 3px solid #66ccff;">会社説明資料</span></h4>
+        <span>（スライド式）</span>
+      </div>
+      <ul class="slick_company_documents sub_page_slick_business_pictures" style="width: 100%; margin-top: 20px;">
+        <li>
+          <img src="images/1.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/2.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/3.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/4.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/5.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/6.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/7.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/8.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/9.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/10.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/11.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/12.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/13.jpg"class="third_wrapper_pictures_image">
+        </li>
+        <li>
+          <img src="images/15.jpg"class="third_wrapper_pictures_image">
+        </li>
+      </ul>
+    </div>
+    <div class="recruit_message sub_page_message">
       <h4><span style="border-bottom: 3px solid #66ccff;">募集要項</span></h4>
     </div>
     <div class="recruit_information">
@@ -143,7 +196,35 @@
   </body>
   <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
     <script>
+      $(".open_hamburger").on('click', function() {
+        $('body').addClass('open');
+      })
+
+      $(".close_hamburger").on('click', function() {
+        $('body').removeClass('open');
+      });
+
+      $('.slick_company_documents').slick({
+        prevArrow:'<i class="fa fa-angle-left arrow arrow-left"></i>',
+        nextArrow:'<i class="fa fa-angle-right arrow arrow-right"></i>',
+        autoplay: false,
+        autoplaySpeed: 1800,
+        speed: 900
+      });
+
+      $('.slick_company_documents').on('afterChange', function() {
+        var caption_element = $('.slick-active').find('.caption');
+        var caption = caption_element.text();
+        if ($('.image_caption_text').length != 0) {
+          $('.image_caption_text').remove();
+        }
+        var html = `<p class="image_caption_text">${caption}</p>`
+        $('.image_caption').append(html);
+      })
+
       $(".open_hamburger").on('click', function() {
         $('body').addClass('open');
       })
