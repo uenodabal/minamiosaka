@@ -290,6 +290,10 @@
     font-size: 24px;
   }
 
+  .third_wrapper_pictures_image {
+    width: 100%;
+  }
+
   .sub_page_slick_business_pictures li .caption {
     font-size: 150%;
     line-height: 300px;

@@ -458,6 +458,11 @@ header .company_name a {
   margin-top: 20px;
 }
 
+.third_wrapper_pictures_image {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .results_lists {
   width: 84%;
   margin: 60px auto;
